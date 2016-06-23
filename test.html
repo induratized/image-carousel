@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<style>
+    .img-thumbnail > img {
+        height: 50px;
+        width: 50px;
+    }
+    div#zoom-div {
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+        top: 00px;
+        left: 00px;
+        float: left;
+    }
+    div#normal-div {} img.zoomed-img {
+        position: absolute;
+        top: 0px;
+        /*-225px;*/
+        left: 0px;
+        /*-400px;*/
+    }
+    .normal-img {
+        margin-left: 5px;
+        margin-top: 0px;
+        height: 425px;
+        width: 600px;
+    }
+    .carousel {
+        min-width: 1100px;
+    }
+</style>
+
+<body>
+    <div class="carousel">
+        <div style="display: inline-block;">
+            <div class="img-thumbnail">
+                <img src="http://www.cutestpaw.com/wp-content/uploads/2016/02/My-Two-Dogs-Sleeping-Together.jpg" onmouseover="refreshImage(this)">
+            </div>
+            <div class="img-thumbnail">
+                <img src="http://www.cutestpaw.com/wp-content/uploads/2016/02/Best-Friends-Forever2.jpg" onmouseover="refreshImage(this)">
+            </div>
+            <div class="img-thumbnail">
+                <img src="http://www.cutestpaw.com/wp-content/uploads/2016/02/Friends.jpg" onmouseover="refreshImage(this)">
+            </div>
+            <div class="img-thumbnail">
+                <img src="http://www.cutestpaw.com/wp-content/uploads/2016/02/Having-Fun-With-The-Frisbee.jpg" onmouseover="refreshImage(this)">
+            </div>
+            <div class="img-thumbnail">
+                <img src="http://www.cutestpaw.com/wp-content/uploads/2016/02/I-Love-You-Big-Sister.jpg" onmouseover="refreshImage(this)">
+            </div>
+            <div class="img-thumbnail">
+                <img src="http://www.cutestpaw.com/wp-content/uploads/2016/02/Juno-And-Butch.jpg" onmouseover="refreshImage(this)">
+            </div>
+            <div class="img-thumbnail">
+                <img src="http://www.cutestpaw.com/wp-content/uploads/2016/02/Let-Go%E2%80%A6-Its-Mine.jpg" onmouseover="refreshImage(this)">
+            </div>
+            <div class="img-thumbnail">
+                <img src="http://www.cutestpaw.com/wp-content/uploads/2016/02/Friends-2.jpg" onmouseover="refreshImage(this)">
+            </div>
+        </div>
+
+        <div id="normal-div" style="display: inline-block;">
+            <img src="http://www.cutestpaw.com/wp-content/uploads/2016/02/My-Two-Dogs-Sleeping-Together.jpg" class="normal-img" onmouseover="displayZoomDiv(this)" onmouseout="hideZoomDiv()" onmousemove="zoomImage(this,event)">
+        </div>
+        <div style="display: inline-block;">
+            <div id="zoom-div">
+                <img src="http://www.cutestpaw.com/wp-content/uploads/2016/02/My-Two-Dogs-Sleeping-Together.jpg" class="zoomed-img">
+            </div>
+        </div>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+
+</html>
