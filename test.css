@@ -1,0 +1,30 @@
+    .img-thumbnail > img {
+        height: 50px;
+        width: 50px;
+    }
+    div#zoom-div {
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+        display: none;
+        top: 00px;
+        left: 00px;
+        float: left;
+    }
+    div#normal-div {} img.zoomed-img {
+        position: absolute;
+        top: 0px;
+        /*-225px;*/
+        left: 0px;
+        /*-400px;*/
+    }
+    .normal-img {
+        margin-left: 5px;
+        margin-top: 0px;
+        height: 425px;
+        width: 600px;
+    }
+    .carousel {
+        min-width: 1100px;
+    }
