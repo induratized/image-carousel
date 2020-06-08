@@ -1,4 +1,4 @@
-# image-carousel
+# image-zoomer
 
 1. Open the test.html file in browser 
 2. Hover over image thumbnails for them to appear to the right in big.
